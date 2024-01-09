@@ -1,1 +1,510 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Krona One";
+  src: url("../font/KronaOne-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-VariableFont_wght.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  font-family: "Krona One", sans-serif;
+  margin-left: 100px;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 2rem 0;
+  z-index: 9;
+  left: 100px;
+  position: absolute;
+  width: -webkit-fill-available;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  padding: 0px;
+  display: flex;
+  gap: 30px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav .buttonRight li a {
+  border: 2px solid #b0ca0b;
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  transition-duration: 0.8s;
+}
+header nav .buttonRight li a:hover {
+  transition-duration: 0.8s;
+  background-color: #b0ca0b;
+  color: #000;
+}
+
+#SectionTop {
+  position: relative;
+  height: 100vh;
+}
+#SectionTop .container {
+  height: 100%;
+}
+#SectionTop .container .row {
+  height: 100%;
+}
+#SectionTop .container .row .col-12 {
+  display: flex;
+  place-self: center;
+}
+#SectionTop .container .row .col-12 .main-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  z-index: -1;
+  object-fit: cover;
+}
+#SectionTop .container .row .col-12 .title h3 {
+  color: white;
+  letter-spacing: 10px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+#SectionTop .container .row .col-12 .title a {
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: 2/2/3/3;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  border: 2px solid #b0ca0b;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#SectionTop .container .row .col-12 .subTitle {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+#SectionTop .container .row .col-12 .subTitle p {
+  border: 2px solid #b0ca0b;
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#sectionNumbers {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0px;
+}
+#sectionNumbers .container .row .col-4 {
+  display: flex;
+  justify-content: center;
+}
+#sectionNumbers .container .row .col-4 .circle {
+  height: 350px;
+  width: 350px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  color: white;
+  background-image: url("../img/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#sectionNumbers .container .row .col-4 .circle h1,
+#sectionNumbers .container .row .col-4 .circle h2 {
+  margin: 0px;
+}
+#sectionNumbers .container .row .col-4 .circle h1,
+#sectionNumbers .container .row .col-4 .circle span {
+  color: #b0ca0b;
+  margin-bottom: 0;
+  font-size: 30px;
+  color: #b0ca0b;
+}
+#sectionNumbers .container .row .col-4 .circle p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+#mobileAdvert {
+  margin: 120px 0px;
+}
+#mobileAdvert .container-fluid .row .col-6 .phoneImg img {
+  width: 100%;
+  height: 100%;
+}
+#mobileAdvert .container-fluid .row .col-6 .phoneImg img::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #b0ca0b;
+}
+#mobileAdvert .container-fluid .row .col-6 .title {
+  padding-right: 80px;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+#mobileAdvert .container-fluid .row .col-6 .title h3 {
+  color: #b0ca0b;
+  line-height: 50px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+#mobileAdvert .container-fluid .row .col-6 .title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin: 30px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#carCharge .container-fluid .row .col-4 {
+  padding: 0px;
+  position: relative;
+}
+#carCharge .container-fluid .row .col-4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#carCharge .container-fluid .row .col-8 {
+  padding: 0px;
+}
+#carCharge .container-fluid .row .col-8 .title {
+  grid-area: 1/2/2/3;
+  background-color: #b0ca0b;
+  padding: 98px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#carCharge .container-fluid .row .col-8 .title h3 {
+  line-height: 50px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+}
+#carCharge .container-fluid .row .col-8 .title p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  padding-right: 5px;
+}
+#carCharge .container-fluid .row .col-8 .title a {
+  text-align: center;
+  border: 2px solid #000;
+  padding: 12px 20px;
+  font-weight: 300;
+  width: 220px;
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.8s;
+  margin-bottom: 120px;
+}
+
+#villaCharge .container-fluid .row .col-4 {
+  padding: 0px;
+  position: relative;
+}
+#villaCharge .container-fluid .row .col-4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#villaCharge .container-fluid .row .col-8 {
+  padding: 0px;
+}
+#villaCharge .container-fluid .row .col-8 .title {
+  grid-area: 1/2/2/3;
+  background-color: black;
+  padding: 98px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #b0ca0b;
+  align-items: self-end;
+}
+#villaCharge .container-fluid .row .col-8 .title h3 {
+  line-height: 50px;
+  letter-spacing: 0.15em;
+  text-align: end;
+  margin-bottom: 0;
+}
+#villaCharge .container-fluid .row .col-8 .title p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  padding-right: 5px;
+  color: white;
+  text-align: end;
+}
+#villaCharge .container-fluid .row .col-8 .title a {
+  text-align: center;
+  border: 2px solid #b0ca0b;
+  padding: 12px 20px;
+  font-weight: 300;
+  width: 220px;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.8s;
+  margin-bottom: 120px;
+}
+
+#workPlace .container-fluid .row .col-4 {
+  padding: 0px;
+  position: relative;
+}
+#workPlace .container-fluid .row .col-4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#workPlace .container-fluid .row .col-8 {
+  padding: 0px;
+}
+#workPlace .container-fluid .row .col-8 .title {
+  grid-area: 1/2/2/3;
+  background-color: #b0ca0b;
+  padding: 98px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#workPlace .container-fluid .row .col-8 .title h3 {
+  line-height: 50px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+}
+#workPlace .container-fluid .row .col-8 .title p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  padding-right: 5px;
+}
+#workPlace .container-fluid .row .col-8 .title a {
+  text-align: center;
+  border: 2px solid #000;
+  padding: 12px 20px;
+  font-weight: 300;
+  width: 220px;
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.8s;
+  margin-bottom: 120px;
+}
+
+#chargingStations {
+  margin: 60px 0px;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide-prev,
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide-next {
+  scale: 0.6;
+  opacity: 0.6;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide-active {
+  scale: 1;
+  opacity: 1;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide .content {
+  position: relative;
+  background-color: #b0ca0b;
+  padding: 54px;
+  position: relative;
+  border-radius: 52px;
+  transition: 0.5s;
+  text-align: end;
+  margin: 70px;
+  margin-left: 0px;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide .content .text {
+  text-align: end;
+  display: grid;
+  justify-items: end;
+  padding-right: 210px;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide .content .text h5 {
+  font-size: 26px;
+  line-height: 50px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide .content .text p {
+  text-align: right;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 900;
+  margin-top: 30px;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide .content .text a {
+  border: 1px solid #000;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: unset;
+  margin-top: 30px;
+  display: flex;
+  width: 200px;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-wrapper .swiper-slide .content img {
+  position: absolute;
+  height: 450px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -130px;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.6s;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-pagination-bullet {
+  width: 26px;
+  height: 26px;
+  background-color: #bcbcbc;
+  border-radius: 100%;
+  cursor: pointer;
+  transition-duration: 0.6s;
+}
+#chargingStations .container-fluid .row .col-12 .mySwiper .swiper-pagination-bullet-active {
+  width: 42px;
+  height: 42px;
+  background-color: #b0ca0b;
+  transition-duration: 0.6s;
+}
+#chargingStations .container-fluid .row .col-12 .title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#chargingStations .container-fluid .row .col-12 .title h4 {
+  background-color: #fff;
+  padding: 0 15px;
+  margin: 0;
+  text-align: center;
+  display: grid;
+  z-index: 1;
+  font-weight: 400;
+  position: relative;
+  width: 420px;
+}
+#chargingStations .container-fluid .row .col-12 .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 100%;
+  height: 2px;
+  background-color: #b0ca0b;
+}
+
+#solutions {
+  margin: 60px 0px;
+}
+#solutions .container-fluid .row .col-12 .mySwiperTwo .swiper-wrapper .swiper-slide .content {
+  position: relative;
+  padding: 54px;
+  position: relative;
+  border-radius: 52px;
+  transition: 0.5s;
+  text-align: end;
+  margin: 70px;
+  margin-left: 0px;
+}
+#solutions .container-fluid .row .col-12 .mySwiperTwo .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.6s;
+}
+#solutions .container-fluid .row .col-12 .mySwiperTwo .swiper-pagination-bullet-active {
+  width: 42px;
+  height: 42px;
+  background-color: #b0ca0b;
+  transition-duration: 0.6s;
+}
+#solutions .container-fluid .row .col-12 .title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#solutions .container-fluid .row .col-12 .title h4 {
+  background-color: #fff;
+  padding: 0 15px;
+  margin: 0;
+  text-align: center;
+  display: grid;
+  z-index: 1;
+  font-weight: 400;
+  position: relative;
+  width: 420px;
+}
+#solutions .container-fluid .row .col-12 .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 100%;
+  height: 2px;
+  background-color: #b0ca0b;
+}/*# sourceMappingURL=main.css.map */
