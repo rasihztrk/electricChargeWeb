@@ -1,0 +1,113 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">HAKKIMIZDA</a>
+                    </li>
+                    <li>
+                        <a href="">MİSYON & VİZYON</a>
+                    </li>
+                    <li>
+                        <a href="">ÇÖZÜMLER</a>
+                    </li>
+                    <li>
+                        <a href="">ÜRÜNLER</a>
+                    </li>
+                    <li>
+                        <a href="">BİZE ULAŞIN</a>
+                    </li>
+                </ul>
+                <ul class="buttonRight">
+                    <li>
+                        <a href="">ŞARJ HARİTASI</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<header id="leftMenu">
+    <div class="topBar">
+        <div class="menu">
+            <div class="wrapper">
+                <div class="burger-menu">
+                    <div id="menu-container">
+                        <div id="menu-wrapper">
+                            <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <a href="" target="_blank"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="" target="_blank"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imagesLogo">
+            <a href="https://multiforce.com.tr/index.html">
+                <img src="https://multiforce.com.tr/view/default/images/logo.png" width="100%" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<div class="headerinside" onclick="slideMenu()">
+    <ul>
+        <li>
+            <a href="">HAKKIMIZDA</a>
+        </li>
+        <li>
+            <a href="">MİSYON &amp; VİZYON</a>
+        </li>
+        <li>
+            <a href="">ÇÖZÜMLER</a>
+        </li>
+        <li>
+            <a href="">ÜRÜNLER</a>
+        </li>
+        <li>
+            <a href="">BİZE ULAŞIN</a>
+        </li>
+    </ul>
+</div>
+<script>
+
+    function slideMenu() {
+        var headerInside = document.querySelector(".headerinside");
+        headerInside.classList.toggle("headerinsideActive");
+        $(".headerinside ul li a").fadeToggle(3000);
+    }
+
+    $(function () {
+        $("#menu-wrapper").click(function (event) {
+            event.stopPropagation();
+            $("#hamburger-menu").toggleClass("open");
+            $("#menu-container .menu-list").toggleClass("headerinsideActive");
+            slideMenu();
+
+            $("body").toggleClass("overflow-hidden");
+        });
+
+        $(".headerinside")
+            .find(".headerinside")
+            .click(function () {
+                $(this).next().toggleClass("open").slideToggle("fast");
+                $(this)
+                    .toggleClass("headerinsideActive")
+                    .find(".menu-link")
+                    .toggleClass("headerinsideActive");
+
+                $(".headerinside .accordion-content")
+                    .not($(this).next())
+                    .slideUp("fast")
+                    .removeClass("open");
+                $(".headerinside .accordion-toggle")
+                    .not(jQuery(this))
+                    .removeClass("headerinsideActive")
+                    .find(".headerinside")
+                    .removeClass("headerinsideActive");
+            });
+    });
+</script>

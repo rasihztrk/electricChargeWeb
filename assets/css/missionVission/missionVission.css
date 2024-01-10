@@ -1,0 +1,201 @@
+body {
+  font-family: "Krona One", sans-serif;
+  margin-left: 100px;
+  overflow-x: hidden;
+}
+
+#top {
+  position: relative;
+  background-color: #000;
+  z-index: 1;
+}
+#top .container-fluid .row .col-12 {
+  padding: 0px;
+}
+#top .container-fluid .row .col-12 .centerArea {
+  height: 486px;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url("../../img/missionBackground.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  z-index: -1;
+}
+#top .container-fluid .row .col-12 .centerArea .title {
+  margin: 0 auto;
+  margin-left: 220px;
+  padding-top: 170px;
+}
+#top .container-fluid .row .col-12 .centerArea .title h2 {
+  font-size: 46px;
+  color: #b0ca0b;
+}
+#top .container-fluid .row .col-12 .centerArea .title p {
+  color: #efefef;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 75%;
+}
+#top .container-fluid .row .col-12 .centerArea .title .list {
+  position: relative;
+  padding-top: 2rem;
+}
+#top .container-fluid .row .col-12 .centerArea .title .list ul {
+  display: flex;
+  gap: 30px;
+}
+#top .container-fluid .row .col-12 .centerArea .title .list ul li {
+  position: relative;
+  color: #b0ca0b;
+  font-size: 12px;
+}
+#top .container-fluid .row .col-12 .centerArea .title .list ul li a {
+  color: white;
+  text-decoration: unset;
+}
+
+#sectionMissionVision .fastMenu {
+  padding: 50px;
+  padding-right: 40px;
+  padding-left: 30%;
+  background-color: #b0ca0b;
+  display: block;
+  text-align: end;
+  height: 100%;
+}
+#sectionMissionVision .fastMenu h5 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: start;
+  color: black;
+  margin-bottom: 20px;
+}
+#sectionMissionVision .fastMenu a {
+  height: 50px;
+  display: flex;
+  border: 2px solid #000;
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #000;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+#sectionMissionVision .fastMenu a:hover {
+  transition-duration: 1s;
+  background-color: black;
+  color: #b0ca0b;
+}
+#sectionMissionVision .missionVision {
+  background-color: black;
+  height: 100%;
+  padding: 40px;
+}
+#sectionMissionVision .missionVision .title h3 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: #b0ca0b;
+}
+#sectionMissionVision .missionVision .title .vision h5,
+#sectionMissionVision .missionVision .title .vision p,
+#sectionMissionVision .missionVision .title .mission h5,
+#sectionMissionVision .missionVision .title .mission p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  margin-bottom: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#sectionMissionVision .missionVision .title .vision {
+  margin-bottom: 80px;
+}
+
+#sectionNumbers {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0px;
+}
+#sectionNumbers .container .row .col-4 {
+  display: flex;
+  justify-content: center;
+}
+#sectionNumbers .container .row .col-4 .circle {
+  height: 350px;
+  width: 350px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  color: white;
+  background-image: url("../../img/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#sectionNumbers .container .row .col-4 .circle h1,
+#sectionNumbers .container .row .col-4 .circle h2 {
+  margin: 0px;
+}
+#sectionNumbers .container .row .col-4 .circle h1,
+#sectionNumbers .container .row .col-4 .circle span {
+  color: #b0ca0b;
+  margin-bottom: 0;
+  font-size: 30px;
+  color: #b0ca0b;
+}
+#sectionNumbers .container .row .col-4 .circle p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+#mobileAdvert {
+  margin: 120px 0px;
+}
+#mobileAdvert .container-fluid .row .col-6 .phoneImg img {
+  width: 100%;
+  height: 100%;
+}
+#mobileAdvert .container-fluid .row .col-6 .phoneImg img::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #b0ca0b;
+}
+#mobileAdvert .container-fluid .row .col-6 .title {
+  padding-right: 80px;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+#mobileAdvert .container-fluid .row .col-6 .title h3 {
+  color: #b0ca0b;
+  line-height: 50px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+#mobileAdvert .container-fluid .row .col-6 .title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin: 30px 0px;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=missionVission.css.map */

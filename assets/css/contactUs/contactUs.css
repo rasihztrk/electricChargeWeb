@@ -1,0 +1,53 @@
+body {
+  font-family: "Krona One", sans-serif;
+  margin-left: 100px;
+  overflow-x: hidden;
+}
+
+.opBlack {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background: black;
+  background: linear-gradient(180deg, black 0%, rgba(0, 212, 255, 0) 100%);
+}
+
+#contactUs {
+  padding: 50px 0px;
+}
+#contactUs .container-fluid .row .col-4 {
+  display: flex;
+  justify-content: center;
+}
+#contactUs .container-fluid .row .col-4:nth-child(2) .box {
+  background-color: #b0ca0b;
+}
+#contactUs .container-fluid .row .col-4:nth-child(2) .box i {
+  color: black;
+}
+#contactUs .container-fluid .row .col-4 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #b0ca0b;
+  gap: 30px;
+  padding: 30px;
+  text-align: center;
+  height: 204px;
+  max-width: 303px;
+  width: 100%;
+}
+#contactUs .container-fluid .row .col-4 .box i {
+  font-size: 30px;
+  color: #b0ca0b;
+}
+#contactUs .container-fluid .row .col-4 .box a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Krona One", sans-serif;
+}/*# sourceMappingURL=contactUs.css.map */
