@@ -1,0 +1,21 @@
+#center404 {
+  background: #000;
+  .container-fluid {
+    .row {
+      .col-12 {
+        display: flex;
+        .img {
+            img {
+                margin-top: 60px;
+                margin-left: 60px;
+            }
+        }
+        .box {
+          width: 150px;
+          height: 750px;
+          background-color: #b0ca0b;
+        }
+      }
+    }
+  }
+}

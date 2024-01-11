@@ -1,0 +1,15 @@
+#center404 {
+  background: #000;
+}
+#center404 .container-fluid .row .col-12 {
+  display: flex;
+}
+#center404 .container-fluid .row .col-12 .img img {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+#center404 .container-fluid .row .col-12 .box {
+  width: 150px;
+  height: 750px;
+  background-color: #b0ca0b;
+}/*# sourceMappingURL=error.css.map */
