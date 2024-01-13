@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+  background-color: black;
 }
 
 #servicesTop {
@@ -83,6 +83,71 @@ body {
             padding: 0 10px;
             height: 110px;
             color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #servicesTop {
+    .container {
+      .row {
+        .col-12 {
+          justify-content: center;
+          .main-background {
+            img {
+            }
+          }
+          .title {
+            h3 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #sectionCard {
+    .container-fluid {
+      .row {
+        .box-area {
+          padding: 0px 10px;
+          grid-template-columns: repeat(2, 1fr);
+          .box {
+            img {
+            }
+            h4 {
+            }
+            p {
+              font-size: 12px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #sectionCard {
+    .container-fluid {
+      .row {
+        .box-area {
+          padding: 0px 10px;
+          grid-template-columns: repeat(1, 1fr);
+          .box {
+            img {
+            }
+            h4 {
+            }
+            p {
+              font-size: 12px;
+              height: 100%;
+            }
           }
         }
       }

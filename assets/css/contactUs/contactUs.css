@@ -18,17 +18,17 @@ body {
 #contactUs {
   padding: 50px 0px;
 }
-#contactUs .container-fluid .row .col-4 {
+#contactUs .container-fluid .row .col-lg-4 {
   display: flex;
   justify-content: center;
 }
-#contactUs .container-fluid .row .col-4:nth-child(2) .box {
+#contactUs .container-fluid .row .col-lg-4:nth-child(2) .box {
   background-color: #b0ca0b;
 }
-#contactUs .container-fluid .row .col-4:nth-child(2) .box i {
+#contactUs .container-fluid .row .col-lg-4:nth-child(2) .box i {
   color: black;
 }
-#contactUs .container-fluid .row .col-4 .box {
+#contactUs .container-fluid .row .col-lg-4 .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,11 +41,11 @@ body {
   max-width: 303px;
   width: 100%;
 }
-#contactUs .container-fluid .row .col-4 .box i {
+#contactUs .container-fluid .row .col-lg-4 .box i {
   font-size: 30px;
   color: #b0ca0b;
 }
-#contactUs .container-fluid .row .col-4 .box a {
+#contactUs .container-fluid .row .col-lg-4 .box a {
   color: #000;
   text-decoration: none;
   transition: 0.5s;

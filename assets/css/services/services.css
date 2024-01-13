@@ -72,4 +72,31 @@ body {
   padding: 0 10px;
   height: 110px;
   color: white;
+}
+
+@media (max-width: 992px) {
+  #servicesTop .container .row .col-12 {
+    justify-content: center;
+  }
+  #servicesTop .container .row .col-12 .title h3 {
+    text-align: center;
+  }
+  #sectionCard .container-fluid .row .box-area {
+    padding: 0px 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #sectionCard .container-fluid .row .box-area .box p {
+    font-size: 12px;
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #sectionCard .container-fluid .row .box-area {
+    padding: 0px 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #sectionCard .container-fluid .row .box-area .box p {
+    font-size: 12px;
+    height: 100%;
+  }
 }/*# sourceMappingURL=services.css.map */

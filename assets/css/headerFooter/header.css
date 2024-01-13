@@ -13,7 +13,6 @@
 header {
   padding: 2rem 0;
   z-index: 9;
-  left: 100px;
   position: absolute;
   width: -webkit-fill-available;
   top: 0px;
@@ -239,4 +238,32 @@ header .socialMedia a i {
 .headerinsideActive {
   left: 100px;
   transition-duration: 1s;
-}/*# sourceMappingURL=header.css.map */
+}
+
+@media (max-width: 1200px) {
+  header nav ul {
+    gap: 20px;
+  }
+}
+@media (max-width: 992px) {
+  header nav ul {
+    display: none;
+    gap: 20px;
+  }
+  header #menu-wrapper #hamburger-menu {
+    margin: 5px;
+  }
+  #leftMenu {
+    width: 50px;
+  }
+  #leftMenu .topBar .imagesLogo {
+    display: flex;
+    justify-content: center;
+  }
+  #leftMenu .topBar .imagesLogo a img {
+    width: 40px;
+  }
+  body {
+    margin-left: 50px !important;
+  }
+} /*# sourceMappingURL=header.css.map */

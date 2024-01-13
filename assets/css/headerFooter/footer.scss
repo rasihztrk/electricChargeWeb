@@ -47,6 +47,19 @@ footer {
         display: grid;
         justify-items: end;
         text-align: end;
+        .social {
+          display: grid;
+          ul {
+            display: flex;
+            gap: 10px;
+            li {
+              i {
+                font-size: 26px;
+                line-height: 36px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -86,6 +99,247 @@ footer {
       a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    .container-fluid {
+      .btn {
+      }
+      h5 {
+        font-size: 1rem;
+      }
+      ul {
+        li {
+          a {
+            line-height: 0px;
+          }
+        }
+      }
+      .footerİnner {
+        padding: 0px;
+        padding-top: 50px;
+        grid-gap: 30px 10px;
+        .list {
+        }
+        .contact {
+        }
+      }
+    }
+    .footer-icon {
+      .images {
+        img {
+        }
+        &::before {
+        }
+      }
+    }
+    .footer-corp {
+      padding: 0px;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      nav {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  footer {
+    .container-fluid {
+      .btn {
+        padding: 4px 10px;
+        font-size: 12px;
+      }
+      h5 {
+      }
+      ul {
+        li {
+          a {
+          }
+        }
+      }
+      .footerİnner {
+        grid-template-columns: 1fr 1fr;
+        .list {
+        }
+        .contact {
+          justify-items: start;
+          text-align: start;
+        }
+      }
+    }
+    .footer-icon {
+      .images {
+        img {
+          width: 120px;
+        }
+        &::before {
+        }
+      }
+    }
+    .footer-corp {
+      nav {
+        gap: 20px;
+        a {
+          font-size: 12px;
+        }
+      }
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .container-fluid {
+      .btn {
+      }
+      h5 {
+      }
+      ul {
+        li {
+          a {
+          }
+        }
+      }
+      .footerİnner {
+        .list {
+        }
+        .contact {
+        }
+      }
+    }
+    .footer-icon {
+      .images {
+        img {
+        }
+        &::before {
+        }
+      }
+    }
+    .footer-corp {
+      display: block;
+      text-align: center;
+      nav {
+        justify-content: center;
+        a {
+        }
+      }
+      img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    .container-fluid {
+      .btn {
+      }
+      h5 {
+      }
+      ul {
+        li {
+          a {
+          }
+        }
+      }
+      .footerİnner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        .list {
+        }
+        .contact {
+          text-align: center;
+          justify-items: center;
+          .social {
+            ul {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    .footer-icon {
+      .images {
+        img {
+        }
+        &::before {
+        }
+      }
+    }
+    .footer-corp {
+      display: block;
+      text-align: center;
+      nav {
+        justify-content: center;
+        a {
+        }
+      }
+      img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  footer {
+    .container-fluid {
+      .btn {
+      }
+      h5 {
+      }
+      ul {
+        li {
+          a {
+          }
+        }
+      }
+      .footerİnner {
+        .list {
+        }
+        .contact {
+          .social {
+            ul {
+            }
+          }
+        }
+      }
+    }
+    .footer-icon {
+      .images {
+        img {
+        }
+        &::before {
+        }
+      }
+    }
+    .footer-corp {
+      display: block;
+      text-align: center;
+      nav {
+        justify-content: center;
+        display: grid;
+        a {
+        }
+      }
+      img {
+        margin-top: 30px;
+        margin-bottom: 10px;
       }
     }
   }

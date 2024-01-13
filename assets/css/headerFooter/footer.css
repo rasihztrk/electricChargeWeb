@@ -47,6 +47,17 @@ footer .container-fluid .footerİnner .contact {
   justify-items: end;
   text-align: end;
 }
+footer .container-fluid .footerİnner .contact .social {
+  display: grid;
+}
+footer .container-fluid .footerİnner .contact .social ul {
+  display: flex;
+  gap: 10px;
+}
+footer .container-fluid .footerİnner .contact .social ul li i {
+  font-size: 26px;
+  line-height: 36px;
+}
 footer .footer-icon .images {
   position: relative;
 }
@@ -82,4 +93,103 @@ footer .footer-corp nav {
 footer .footer-corp nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1200px) {
+  footer .container-fluid h5 {
+    font-size: 1rem;
+  }
+  footer .container-fluid ul li a {
+    line-height: 0px;
+  }
+  footer .container-fluid .footerİnner {
+    padding: 0px;
+    padding-top: 50px;
+    grid-gap: 30px 10px;
+  }
+  footer .footer-corp {
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  footer .footer-corp nav a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 992px) {
+  footer .container-fluid .btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  footer .container-fluid .footerİnner {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .container-fluid .footerİnner .contact {
+    justify-items: start;
+    text-align: start;
+  }
+  footer .footer-icon .images img {
+    width: 120px;
+  }
+  footer .footer-corp nav {
+    gap: 20px;
+  }
+  footer .footer-corp nav a {
+    font-size: 12px;
+  }
+  footer .footer-corp img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-corp {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-corp nav {
+    justify-content: center;
+  }
+  footer .footer-corp img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 576px) {
+  footer .container-fluid .footerİnner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  footer .container-fluid .footerİnner .contact {
+    text-align: center;
+    justify-items: center;
+  }
+  footer .container-fluid .footerİnner .contact .social ul {
+    justify-content: center;
+  }
+  footer .footer-corp {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-corp nav {
+    justify-content: center;
+  }
+  footer .footer-corp img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 450px) {
+  footer .footer-corp {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-corp nav {
+    justify-content: center;
+    display: grid;
+  }
+  footer .footer-corp img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=footer.css.map */
