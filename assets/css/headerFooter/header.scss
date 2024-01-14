@@ -1,16 +1,4 @@
-@font-face {
-  font-family: "Krona One";
-  src: url("../../font/KronaOne-Regular.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../font/Montserrat-VariableFont_wght.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
 
 header {
   padding: 2rem 0;
@@ -461,6 +449,7 @@ header {
       padding-right: 60px;
       li {
         a {
+          font-size: 3.4vw;
         }
       }
     }
@@ -553,8 +542,8 @@ header {
       .menu {
         .wrapper {
           .burger-menu {
-           .socialMedia {
-           } 
+            .socialMedia {
+            }
           }
         }
       }

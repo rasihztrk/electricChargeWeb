@@ -4,6 +4,20 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Krona One";
+  src: url("../font/KronaOne-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-VariableFont_wght.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
 #SectionTop {
   position: relative;
   height: 100vh;

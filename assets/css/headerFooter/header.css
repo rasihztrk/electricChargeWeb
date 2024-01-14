@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Krona One";
-  src: url("../../font/KronaOne-Regular.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../font/Montserrat-VariableFont_wght.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
 header {
   padding: 2rem 0;
   z-index: 9;
@@ -274,6 +262,9 @@ header .socialMedia a i {
   .headerinside ul {
     padding-left: 30px;
     padding-right: 60px;
+  }
+  .headerinside ul li a {
+    font-size: 3.4vw;
   }
   .headerinsideActive {
     left: 50px;
