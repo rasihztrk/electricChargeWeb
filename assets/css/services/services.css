@@ -44,7 +44,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px 30px;
-  padding: 0px 140px;
+  padding: 0px 40px;
 }
 #sectionCard .container-fluid .row .box-area .box {
   display: flex;
@@ -74,6 +74,16 @@ body {
   color: white;
 }
 
+@media (max-width: 1500px) {
+  #sectionCard {
+    margin: 130px 0px;
+  }
+}
+@media (max-width: 1230px) {
+  #sectionCard {
+    margin: 180px 0px;
+  }
+}
 @media (max-width: 992px) {
   #servicesTop .container .row .col-12 {
     justify-content: center;
@@ -84,6 +94,7 @@ body {
   #sectionCard .container-fluid .row .box-area {
     padding: 0px 10px;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0px 0px;
   }
   #sectionCard .container-fluid .row .box-area .box p {
     font-size: 12px;
@@ -91,9 +102,15 @@ body {
   }
 }
 @media (max-width: 576px) {
+  #sectionCard {
+    margin: 60px 0px;
+  }
   #sectionCard .container-fluid .row .box-area {
     padding: 0px 10px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #sectionCard .container-fluid .row .box-area .box h4 {
+    height: 100%;
   }
   #sectionCard .container-fluid .row .box-area .box p {
     font-size: 12px;

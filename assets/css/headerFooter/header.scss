@@ -349,6 +349,9 @@ header {
 }
 
 @media (max-width: 992px) {
+  .headerinsideActive {
+    left: 50px;
+  }
   header {
     nav {
       ul {
@@ -448,5 +451,121 @@ header {
   }
   body {
     margin-left: 50px;
+  }
 }
+
+@media (max-width: 576px) {
+  .headerinside {
+    ul {
+      padding-left: 30px;
+      padding-right: 60px;
+      li {
+        a {
+        }
+      }
+    }
+  }
+  .headerinsideActive {
+    left: 50px;
+  }
+  header {
+    nav {
+      ul {
+        li {
+          a {
+            &:hover {
+            }
+          }
+        }
+      }
+      .buttonRight {
+        li {
+          a {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+    #menu-wrapper {
+    }
+
+    #menu-wrapper #hamburger-menu {
+    }
+
+    #menu-wrapper #hamburger-menu span {
+    }
+
+    #menu-wrapper #hamburger-menu span:nth-child(1) {
+    }
+    #menu-wrapper #hamburger-menu span:nth-child(2) {
+    }
+    #menu-wrapper #hamburger-menu span:nth-child(3) {
+    }
+    #menu-wrapper #hamburger-menu.open span:nth-child(1) {
+    }
+    #menu-wrapper #hamburger-menu.open span:nth-child(2) {
+    }
+    #menu-wrapper #hamburger-menu.open span:nth-child(3) {
+    }
+
+    #menu-container .menu-list .menu-submenu {
+    }
+    #menu-container .menu-list {
+    }
+
+    #menu-container .menu-list li.accordion-toggle,
+    #menu-container .menu-list .menu-login {
+    }
+    #menu-container .menu-list li:first-of-type {
+    }
+
+    .accordion-toggle,
+    .accordion-content {
+    }
+
+    .accordion-content {
+    }
+
+    .accordion-toggle a:before,
+    .accordion-toggle a:after {
+    }
+
+    .accordion-toggle a:before {
+    }
+
+    .accordion-toggle.active-tab {
+    }
+    .accordion-toggle a.active:before {
+    }
+
+    .accordion-toggle a.active:after {
+    }
+    .socialMedia {
+      a {
+        i {
+        }
+      }
+    }
+  }
+  #leftMenu {
+    .topBar {
+      .menu {
+        .wrapper {
+          .burger-menu {
+           .socialMedia {
+           } 
+          }
+        }
+      }
+      .imagesLogo {
+        a {
+          img {
+          }
+        }
+      }
+    }
+  }
+  body {
+  }
 }

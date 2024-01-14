@@ -246,6 +246,9 @@ header .socialMedia a i {
   }
 }
 @media (max-width: 992px) {
+  .headerinsideActive {
+    left: 50px;
+  }
   header nav ul {
     display: none;
     gap: 20px;
@@ -264,6 +267,15 @@ header .socialMedia a i {
     width: 40px;
   }
   body {
-    margin-left: 50px !important;
+    margin-left: 50px;
   }
-} /*# sourceMappingURL=header.css.map */
+}
+@media (max-width: 576px) {
+  .headerinside ul {
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+  .headerinsideActive {
+    left: 50px;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -113,24 +113,26 @@ body {
     .row {
       .col-lg-6 {
         .phoneImg {
+          position: relative;
           img {
             width: 100%;
             height: 100%;
-            &::before {
-              content: "";
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
-              -webkit-transform: translate(-50%, -50%);
-              -moz-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              -o-transform: translate(-50%, -50%);
-              width: 500px;
-              height: 500px;
-              border-radius: 100%;
-              background-color: #b0ca0b;
-            }
+          }
+          &::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            background-color: #b0ca0b;
           }
         }
       }
@@ -535,8 +537,10 @@ body {
         .col-lg-6 {
           .phoneImg {
             img {
-              &::before {
-              }
+            }
+            &::before {
+              width: 400px;
+              height: 400px;
             }
           }
         }
@@ -682,7 +686,6 @@ body {
       }
     }
   }
-
   #solutions {
     .container-fluid {
       .row {
@@ -745,8 +748,10 @@ body {
         .col-lg-6 {
           .phoneImg {
             img {
-              &::before {
-              }
+            }
+            &::before {
+              width: 300px;
+              height: 300px;
             }
           }
         }
@@ -802,6 +807,8 @@ body {
 }
 
 @media (max-width: 576px) {
+  body {
+  }
   #SectionTop {
     .container {
       .row {
@@ -1028,6 +1035,32 @@ body {
       }
     }
   }
+  #mobileAdvert {
+    .container-fluid {
+      .row {
+        .col-lg-6 {
+          .phoneImg {
+            img {
+            }
+            &::before {
+              width: 220px;
+              height: 220px;
+            }
+          }
+        }
+        .col-lg-6 {
+          .title {
+            h3 {
+            }
+            p {
+            }
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -1082,8 +1115,8 @@ body {
         .col-lg-6 {
           .phoneImg {
             img {
-              &::before {
-              }
+            }
+            &::before {
             }
           }
         }
